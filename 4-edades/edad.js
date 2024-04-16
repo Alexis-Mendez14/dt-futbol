@@ -16,3 +16,7 @@ Escriba un programa que:
 Tip: consulten los métodos de la clase Date
 https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
 */
+function edad(){
+  const fecha = new Date('June 14,1990')
+  console.log(fecha);
+}
