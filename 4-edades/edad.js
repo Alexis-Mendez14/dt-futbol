@@ -16,7 +16,20 @@ Escriba un programa que:
 Tip: consulten los métodos de la clase Date
 https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
 */
-function edad(){
-  const fecha = new Date('June 14,1990')
-  console.log(fecha);
+function calcularEdad(fechaNacimiento) {
+  const hoy = new Date();
+  const fechaNac = new Date(fechaNacimiento);
+  let edad = hoy.getFullYear() - fechaNac.getFullYear();
+  
+  if (hoy.getMonth() < fechaNac.getMonth() || 
+      (hoy.getMonth() === fechaNac.getMonth() && hoy.getDate() < fechaNac.getDate())) {
+    edad--;
+  }
+  
+  return edad;
+}
+
+function imprimirMensaje(nombre, apodo, apellido, fechaNacimiento) {
+  const edad = calcularEdad(fechaNacimiento);
+  console.log(nombre + ' "' + apodo + '" ' + apellido + ' (' + edad + ' años)');
 }
