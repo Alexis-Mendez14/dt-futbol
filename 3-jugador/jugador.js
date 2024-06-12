@@ -10,4 +10,4 @@ Escriba un programa que:
 - imprima en consola un mensaje en el formato: {nombre} "{apodo}" {apellido} (notesé las comillas es parte de lo impreso).
 */
 const jugador = ['Julian','Juli','Torres'];
-console.log(jugadors);
+console.log(jugador);

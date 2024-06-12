@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Munidiales",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
